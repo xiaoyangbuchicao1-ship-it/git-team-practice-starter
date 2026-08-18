@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, "Microsoft YaHei", sans-serif;
+  background: #f3f6fb;
+  color: #172033;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.board {
+  width: min(680px, calc(100% - 40px));
+}
+
+.eyebrow,
+.label {
+  color: #526078;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+.description {
+  color: #68758a;
+}
+
+.task-card {
+  margin-top: 32px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border: 1px solid #dfe5ef;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgb(32 48 77 / 10%);
+}
+
+.status {
+  margin-bottom: 0;
+  color: #2f6fed;
+  font-weight: 700;
+}
+
+button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 10px;
+  background: #172033;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2f6fed;
+}
+
+@media (max-width: 560px) {
+  .task-card {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
